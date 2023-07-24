@@ -10,6 +10,16 @@ p {
     color: #150f6d;
 }
 
+.purple {
+    color: #1f12ce;
+    font-size: medium;
+}
+
+span {
+    font-size:x-small;
+    color: #1f12ce;
+}
+
 .container {
   display: flex;
   justify-content: center;
