@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f12ce;
+}
+p {
+    color: #150f6d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f12ce;
+  flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px; /* Limit the card width for larger screens */
+  width: 90%; /* Adjust the width for smaller screens */
+  margin-bottom: 20px; /* Add margin between the main card and love card on larger screens */
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.gallery img {
+  max-width: 200px;
+  margin: 5px;
+}
+
+.checkboxes {
+  margin-top: 20px;
+  
+}
+
+.checkboxes div {
+    background-color: black;   
+    color: white; 
+    
+    border: solid 2px rgb(45, 6, 136); 
+  }
+
+#love-card {
+  background-color: #f9c5ca;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; /* Full width on smaller screens */
+  max-width: 500px; /* Limit the card width for larger screens */
+  text-align: center;
+  margin: 0 auto;
+}
+
+#love-card p {
+    color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media query for cellphones */
+@media (max-width: 480px) {
+  .gallery img {
+    max-width: 85%;
+  }
+
+  .card, .love-card {
+    max-width: 85%;
+    margin: 0; /* Remove the margin between cards on smaller screens */
+  }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider-container {
+    overflow: hidden;
+    max-width: 100%;
+    /* Set a fixed height for the slider container */
+    height: 300px; /* Adjust this value as needed */
+    background-color: #4b43bd;
+    
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Set the height of the slider to match the container */
+    height: 100%;
+    
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    /* Set a fixed height for the slide container */
+    height: 100%;
+    /* Center the image within the slide */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    
+  }
+  
+  .slide img {
+    /* Ensure the image covers the entire slide and maintains its aspect ratio */
+    object-fit: cover;
+    /* Set the maximum height of the image to match the slide height */
+    max-height: 100%;
+    
+  }
