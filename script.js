@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
   
     function showSlide(index) {
-      slider.style.transform = `translateX(-${index * 100}%)`;
+      slider.style.transform = `translateX(-${index*100}%)`;
     }
   
     function nextSlide() {
@@ -32,13 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
       showSlide(currentIndex);
     }
   
-    function prevSlide() {
-      currentIndex--;
-      if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-      }
-      showSlide(currentIndex);
-    }
   
     setInterval(nextSlide, 3000); // Auto-slide every 3 seconds
   
